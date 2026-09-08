@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#14293d">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="googlebot" content="noindex, nofollow">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Viajes">
+<title>Viajes</title>
+<style>
+:root{--bg:#f7f5f1;--card:#fff;--ink:#111c26;--mut:#5c6673;--line:#e3ddd4;
+  --navy:#14293d;--accent:#c1440e;--green:#2e7d4f;--gold:#c8891b}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);
+  font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+  padding:0 0 60px}
+header{background:var(--navy);color:#fff;padding:calc(26px + env(safe-area-inset-top)) 20px 26px}
+.win{max-width:760px;margin:0 auto;padding:0 18px}
+h1{margin:0;font-size:22px;font-weight:750;letter-spacing:-.02em}
+header p{margin:6px 0 0;font-size:13px;opacity:.72}
+.sect{font-size:11.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--mut);margin:30px 0 10px}
+a.viaje{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:15px 17px;margin-bottom:10px;text-decoration:none;color:inherit;
+  box-shadow:0 1px 2px rgba(20,41,61,.06),0 4px 14px rgba(20,41,61,.05);
+  transition:transform .12s,box-shadow .12s}
+a.viaje:hover{transform:translateY(-1px);box-shadow:0 2px 4px rgba(20,41,61,.08),0 8px 22px rgba(20,41,61,.09)}
+a.viaje.pasado{opacity:.62}
+.top{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap}
+.tit{font-size:17px;font-weight:700;letter-spacing:-.015em}
+.tag{font-size:10.5px;font-weight:700;padding:2.5px 8px;border-radius:999px;
+  background:#eee9e1;color:#4a5460;letter-spacing:.03em}
+.tag.ahora{background:#e0f0e6;color:var(--green)}
+.tag.pronto{background:#fdeee2;color:var(--accent)}
+.tag.borrador{background:#fbf1dc;color:var(--gold)}
+.meta{margin-top:5px;font-size:13px;color:var(--mut)}
+.nums{margin-top:9px;font-size:11.5px;color:var(--mut);display:flex;gap:14px;flex-wrap:wrap}
+.nums b{color:var(--ink);font-weight:650}
+.pub{margin:-6px 0 12px;padding:0 17px;font-size:11.5px;color:var(--mut)}
+.pub a{color:var(--accent);word-break:break-all}
+.nuevo{display:block;background:var(--card);border:1px dashed var(--line);border-radius:14px;
+  padding:15px 17px;margin-bottom:10px}
+.nuevo b{font-size:14px;font-weight:700;color:var(--ink)}
+.nuevo p{margin:5px 0 9px;font-size:12.5px;color:var(--mut);line-height:1.55}
+.cmd{display:flex;align-items:center;gap:8px;background:#eee9e1;border-radius:9px;
+  padding:9px 11px;font:11.5px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;
+  color:#3c4450;overflow-x:auto}
+.cmd button{flex:none;border:0;background:var(--navy);color:#fff;border-radius:7px;
+  padding:5px 10px;font-size:11px;font-weight:650;cursor:pointer;font-family:inherit}
+.vacio{background:var(--card);border:1px dashed var(--line);border-radius:14px;
+  padding:22px;color:var(--mut);font-size:13.5px}
+.pie{margin-top:34px;font-size:11.5px;color:var(--mut);line-height:1.7}
+.pie code{background:#eee9e1;padding:1px 5px;border-radius:4px;font-size:11px}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#12141a;--card:#1b1e26;--ink:#eef1f5;--mut:#98a1ad;--line:#2b2f3a}
+  .cmd{background:#262b36;color:#c8d0da}
+  a.viaje{box-shadow:none}
+  .tag{background:#262b36;color:#b6bfcb}
+  .pie code{background:#262b36}
+}
+</style>
+</head>
+<body>
+<header><div class="win" style="padding:0">
+  <h1>Viajes</h1>
+  <p>2 viajes</p>
+</div></header>
+<div class="win">
+<div class="sect">En preparación</div>
+<a class="viaje borrador" href="https://yampo.github.io/japon-2026/">
+  <div class="top"><span class="tit">Japón</span>
+    <span class="tag borrador">En preparación</span></div>
+  <div class="meta">fechas por definir</div>
+  <div class="nums"><span><b>1</b> día</span><span><b>1</b> lugar</span><span>JP y Thais</span></div>
+</a>
+<div class="sect">Viajes terminados</div>
+<a class="viaje pasado" href="https://yampo.github.io/nyc-2026/">
+  <div class="top"><span class="tit">NYC 2026</span>
+    <span class="tag pasado">Terminado</span></div>
+  <div class="meta">Nueva York · 29 ago – 6 sep 2026</div>
+  <div class="nums"><span><b>9</b> días</span><span><b>304</b> lugares</span><span>JP y Thais</span></div>
+</a>
+<div class="pie">
+  Cada viaje es su propio sitio y se congela cuando termina.
+</div>
+</div>
+</body>
+</html>
